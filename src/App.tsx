@@ -230,14 +230,14 @@ const Hero = ({ onEnterApp }: { onEnterApp: () => void }) => (
               <div className="relative pl-6 space-y-8 before:absolute before:left-[11px] before:top-2 before:bottom-2 before:w-px before:bg-gray-100">
                 <div className="relative group">
                   <div className="absolute -left-[19px] top-1 w-2.5 h-2.5 rounded-full bg-blue-600 ring-4 ring-blue-50" />
-                  <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest leading-none mb-1 font-mono">10:30 AM • APR 24</p>
+                  <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest leading-none mb-1">10:30 AM • APR 24</p>
                   <h4 className="text-sm font-black mb-1">Blood Work Analyzed</h4>
                   <p className="text-xs text-gray-400 font-medium leading-relaxed">Detected elevated Glucose levels. Syncing with insurance...</p>
                 </div>
 
                 <div className="relative group opacity-60">
                    <div className="absolute -left-[19px] top-1 w-2.5 h-2.5 rounded-full bg-emerald-500 ring-4 ring-emerald-50" />
-                  <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest leading-none mb-1 font-mono">09:15 AM • APR 24</p>
+                  <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest leading-none mb-1">09:15 AM • APR 24</p>
                   <h4 className="text-sm font-black mb-1">Report Uploaded</h4>
                   <p className="text-xs text-gray-400 font-medium leading-relaxed">Encrypted medical PDF processed via CareSync Secure Channel.</p>
                 </div>
@@ -249,7 +249,7 @@ const Hero = ({ onEnterApp }: { onEnterApp: () => void }) => (
                     <Shield size={18} className="text-blue-400" />
                     <div>
                       <p className="text-[9px] font-black text-white/50 uppercase tracking-widest leading-none mb-1">Insurance Optimization</p>
-                      <p className="text-xs font-bold font-mono">Switch to Plan #8421</p>
+                      <p className="text-xs font-bold">Switch to Plan #8421</p>
                     </div>
                   </div>
                   <ChevronRight size={16} className="text-white/40" />

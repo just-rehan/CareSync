@@ -22,6 +22,62 @@
   --radius-2xl: 24px;
 }
 
+@import "tw-animate-css";
+
+@theme inline {
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --animate-glow-slow: glow 2.5s ease-in-out infinite;
+  --animate-bounce-drop: bounceDrop 0.8s ease;
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
+    }
+    50% {
+      box-shadow: 0 0 16px rgba(59, 130, 246, 0.8);
+    }
+  }
+
+  @keyframes bounceDrop {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
+:root {
+  --success: oklch(0.70 0.15 145);
+  --success-foreground: oklch(0.98 0 0);
+  --warning: oklch(0.75 0.12 85);
+  --warning-foreground: oklch(0.15 0 0);
+}
+
+.dark {
+  --success: oklch(0.65 0.18 150);
+  --success-foreground: oklch(0.98 0 0);
+  --warning: oklch(0.80 0.15 90);
+  --warning-foreground: oklch(0.15 0 0);
+}
+
+
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
 @layer base {
   * {
     @apply border-border;
